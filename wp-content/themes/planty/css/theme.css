@@ -22,14 +22,38 @@ body * {
 
 li.menu-item a {
     display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
 }
 
-li.menu-item a:hover,
-li.menu-item.current-menu-item a {
-    color: #000000 !important;
-    font-weight: 600;
+li.menu-item a:hover {
+    font-size: 13px;
+    font-weight: 700;
     text-decoration: none !important;
-    transform: scale(0.8);
+}
+
+.menu-item-48 a {
+    padding: 30px 61px 31px 61px;
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item-49 a {
+    color: #FFFFFF !important;
+    background-color: #DC9F96;
+    width: 236px;
+    height: 80px;
+    padding: 30px 61px 31px 61px;
+    margin-left: 61px;
+    text-align: center;
+    align-items: center;
+}
+
+.menu-item-49 a:hover {
+    background-color: #C02E44;
+    font-size: 16px !important;
+    font-weight: 400 !important;
 }
 
 #site-footer {
