@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+
+body * {
+    font-family: 'Syne', sans-serif;
+}
+
+#site-header {
+    color: #FFFFFF;
+}
+
+#site-header a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#site-header.sticky-top {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    background-color: #FFFFFF;
+}
+
+li.menu-item a {
+    display: inline-block;
+}
+
+li.menu-item a:hover,
+li.menu-item.current-menu-item a {
+    color: #000000 !important;
+    font-weight: 600;
+    text-decoration: none !important;
+    transform: scale(0.8);
+}
+
+#site-footer {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background: #FFFFFF;
+}
+
+#site-footer a.footer {
+    color: #000000;
+    font-family: syne;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#site-footer a.footer:hover {
+    text-decoration: none;
+}
