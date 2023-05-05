@@ -14,7 +14,7 @@
 
 ?>
 <footer id="site-footer" class="header-footer-group">
-	<a class="footer" href="#">Mentions légales</a>
+	<a class="footer" href="http://planty/">Mentions légales</a>
 </footer><!-- #site-footer -->
 
 <?php wp_footer(); ?>
