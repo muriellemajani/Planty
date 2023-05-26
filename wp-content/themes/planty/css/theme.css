@@ -56,6 +56,60 @@ li.menu-item a:hover {
     font-weight: 400 !important;
 }
 
+#left {
+    width: 47%;
+    float: left;
+    margin-right: 6%;
+}
+
+#right {
+    width: 47%;
+    float: left;
+}
+
+.form_precommande:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.form_precommande {
+    display: flex;
+}
+
+.form_precommande label {
+    color: #FFFFFF;
+    font-family: Syne;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.form_precommande input {
+    border-radius: 5px;
+}
+
+.wpcf7 input[type=submit] {
+    color: #FFFFFF;
+    background-color: #E0B9B4;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+.wpcf7 input[type=submit]:hover {
+    background-color: #C02E44;
+    text-decoration: none;
+}
+
+#commander:hover {
+    background-color: #C02E44;
+    text-decoration: none;
+}
+
 #site-footer {
     height: 60px;
     display: flex;

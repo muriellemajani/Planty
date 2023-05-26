@@ -11,7 +11,9 @@ add_filter('wp_nav_menu_items', 'planty_admin_nav');
 function planty_admin_nav($items)
 {
     if (is_user_logged_in()) {
-        $items .= '<li class="lienAdmin menu-item menu-item-48"><a href="' . get_admin_url() . '">Admin</a></li>';
+        $newItem = '<li class="lienAdmin menu-item menu-item-48"><a href="' . get_admin_url() . '">Admin</a></li>';
+        $adminItem = '</li>' . $newItem . '<li>';
+        $items = preg_replace('</li>', $adminItem,  $items, 1);
     }
     return $items;
 }
