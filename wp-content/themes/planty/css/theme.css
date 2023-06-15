@@ -4,6 +4,9 @@ body * {
     font-family: 'Syne', sans-serif;
 }
 
+
+/* Header site */
+
 #site-header {
     background-color: #FFFFFF;
     display: flex;
@@ -24,6 +27,14 @@ body * {
     padding: 0;
     margin: 0;
 }
+
+.header-inner,
+section-inner {
+    margin-right: 0;
+}
+
+
+/* Menu haut */
 
 li.menu-item a {
     display: inline-block;
@@ -59,24 +70,47 @@ li.menu-item a:hover {
     font-weight: 400 !important;
 }
 
+
+/* Formulaire de contact */
+
+.form_contact input,
+textarea {
+    border-radius: 5px;
+}
+
+
+/* Formulaire de commande */
+
 #left {
     width: 47%;
-    float: left;
-    margin-right: 6%;
+    margin-right: 25px;
+
+    .infos {
+        font-family: 'Syne', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        color: #FFFFFF;
+        margin-top: 0px;
+    }
 }
 
 #right {
     width: 47%;
-    float: left;
     border-left: 1px solid #FFFFFF;
-    padding-left: 44px;
+    padding-left: 24px;
+
+    .infos {
+        font-family: 'Syne', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        color: #FFFFFF;
+        margin-top: 0px;
+    }
 }
 
 .form_precommande:after {
     content: "\0020";
-    display: block;
-    height: 0;
-    clear: both;
+    display: flex;
     visibility: hidden;
     overflow: hidden;
     margin-bottom: 10px;
@@ -117,6 +151,9 @@ li.menu-item a:hover {
     text-decoration: none;
 }
 
+
+/* Footer site */
+
 #site-footer {
     display: flex;
     justify-content: center;
@@ -136,4 +173,23 @@ li.menu-item a:hover {
 
 #site-footer a.footer:hover {
     text-decoration: none;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+    .form_precommande {
+        flex-direction: column;
+    }
+
+    #left {
+        width: 100%;
+    }
+
+    #right {
+        width: 100%;
+        border: none;
+        padding-left: 0;
+    }
 }
