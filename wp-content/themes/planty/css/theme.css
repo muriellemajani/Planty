@@ -81,6 +81,66 @@ textarea {
 
 /* Formulaire de commande */
 
+.quantity-form {
+    display: flex;
+    font-family: 'Syne', sans-serif;
+}
+
+.input-quantity {
+    height: 56px;
+    border-style: none;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+input.input-quantity {
+    width: 75px;
+    border-radius: 5px 0 0 5px;
+}
+
+.quantity-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 0 5px 5px 0;
+    margin-right: 20px;
+    background-color: #FFFFFF;
+}
+
+.quantity-button {
+    border: none;
+    background-color: #DC9F96;
+    color: #FFFFFF;
+    height: 27px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 18px;
+    border-radius: 0 5px 5px 0;
+}
+
+a.quantity-button {
+    width: 31px;
+}
+
+.order-button {
+    background-color: #E0B9B4;
+    color: #FFFFFF;
+    height: 56px;
+    padding: 0 55px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+a.order-button {
+    width: 140px;
+}
+
 #left {
     width: 47%;
     margin-right: 25px;
